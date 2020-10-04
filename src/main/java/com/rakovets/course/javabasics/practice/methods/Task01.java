@@ -16,7 +16,7 @@ public class Task01 extends StandardInputTask {
         int sizeTop = INPUT_SCANNER.nextInt();
         int positionPlayerByDamage = INPUT_SCANNER.nextInt();
 
-        isTopPlayer(sizeTop, positionPlayerByDamage);
+        isTopPlayer (sizeTop, positionPlayerByDamage);
     }
 
     /**
@@ -30,6 +30,7 @@ public class Task01 extends StandardInputTask {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используя параметры метода
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
-        return false;
+        return positionPlayerByDamage <= sizeTop;
+
     }
 }
