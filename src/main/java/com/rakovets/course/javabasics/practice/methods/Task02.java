@@ -2,6 +2,8 @@ package com.rakovets.course.javabasics.practice.methods;
 
 import com.rakovets.course.javabasics.util.StandardInputTask;
 
+import java.awt.*;
+
 /**
  * Разработать программу для desktop приложения:
  * которая выведет приветствии для пользователя в зависимости от времени суток.
@@ -27,6 +29,16 @@ public class Task02 extends StandardInputTask {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используя параметры метода
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
-        return null;
+        String result = null;
+        if (hour >= 0 && hour <= 5){
+            result = "Good night";
+      } else if (hour < 11 && hour >5) {
+            result = "Good morning";
+      } else if (hour >= 12 && hour <= 17) {
+            result = "Good day";
+      } else if (hour >= 18 && hour <= 23) {
+            result = "Good evening";
+      }
+        return result;
     }
 }
