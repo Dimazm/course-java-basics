@@ -22,8 +22,15 @@ public class Task08 {
         int damage = (args.length != 2) ? scanner.nextInt() : Integer.parseInt(args[0]);
         String typeMob = (args.length != 2) ? scanner.next() : args[1];
 
-        //TODO
-        // Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
-        // Для проверки решения необходимо запустить @Test для данного class (в директории test)
+        if (typeMob == "UNDEAD" || typeMob == "ZOMBIE") {
+            damage *= 1.5;
+            System.out.println(damage);
+        } else if (typeMob == "SAINT") {
+            damage /= 2;
+            System.out.println(damage);
+        } else
+            System.out.println(damage);
+
+
     }
 }
