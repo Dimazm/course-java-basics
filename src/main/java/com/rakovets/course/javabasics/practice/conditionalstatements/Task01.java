@@ -25,9 +25,9 @@ public class Task01 {
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
         System.out.println(checkTopFive(positionPlayerByDamage));
 
-     }
+    }
 
-    static boolean checkTopFive(int position){
+    static boolean checkTopFive(int position) {
         return position <= 5;
     }
 }
