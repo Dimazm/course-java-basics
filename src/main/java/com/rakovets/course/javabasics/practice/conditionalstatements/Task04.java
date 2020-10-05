@@ -21,5 +21,26 @@ public class Task04 {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
+        System.out.println(getNameWeekday(weekdayNumber));
     }
+
+    static String getNameWeekday(int weekdayNumber) {
+        if (weekdayNumber == 1) {
+            return "monday";
+        } else if (weekdayNumber == 2) {
+            return "tuesday";
+        } else if (weekdayNumber == 3) {
+            return "wednesday";
+        } else if (weekdayNumber == 4) {
+            return "thursday";
+        } else if (weekdayNumber == 5) {
+            return "friday";
+        } else if (weekdayNumber == 6) {
+            return "saturday";
+        } else if (weekdayNumber == 7) {
+            return "sunday";
+        }
+        return null;
+    }
+
 }
