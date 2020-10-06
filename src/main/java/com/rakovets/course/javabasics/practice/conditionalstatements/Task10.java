@@ -42,12 +42,15 @@ public class Task10 {
             } else if (secondFuelReserves == thirdFuelReserves) {
                 System.out.println("2 3");
             } else System.out.println("3");
+
+        } else if ( secondFuelReserves < thirdFuelReserves) {
+            System.out.println("1 2");
+        } else if (secondFuelReserves == thirdFuelReserves ) {
+            System.out.println("1 2 3");
+        } else  {
+            System.out.println("3");
         }
 
-        if (firstFuelReserves == secondFuelReserves && secondFuelReserves < thirdFuelReserves) {
-            System.out.println("1 2");
-        } else if (secondFuelReserves == thirdFuelReserves && thirdFuelReserves == firstFuelReserves) {
-            System.out.println("1 2 3");
-        }
+
     }
 }
