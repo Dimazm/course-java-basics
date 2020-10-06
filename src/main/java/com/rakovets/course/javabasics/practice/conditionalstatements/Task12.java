@@ -25,5 +25,36 @@ public class Task12 {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
+
+        System.out.println(getZodiac(day, month));
+
+    }
+
+    static String getChineseZodiac(int year) {
+        int zodiac = year % 2020;
+        return null;
+    }
+
+    static String getZodiac(int day, int month) {
+
+
+        switch (month) {
+            case 1: {
+                if (day>= 21){
+                    return "Water-Bearer";
+                } else return "Sea-Goat";
+            }
+            case 2: {
+                if (day >= 20){
+                    return "Fishes";
+                } else return "Water-Bearer";
+            }
+            case 3: {
+                if (day >= 21){
+                    return "Ram";
+                } else return "Fishes";
+            }
+        }
+        return null;
     }
 }
