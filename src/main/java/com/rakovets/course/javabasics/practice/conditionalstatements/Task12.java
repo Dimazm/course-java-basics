@@ -26,7 +26,7 @@ public class Task12 {
         // Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
 
-        System.out.println(getZodiac(day, month));
+        System.out.println("Zodiac Sign: " + getZodiac(day, month) + "." +  "Chinese Zodiac: ");
 
     }
 
@@ -40,12 +40,12 @@ public class Task12 {
 
         switch (month) {
             case 1: {
-                if (day>= 21){
+                if (day >= 21){
                     return "Water-Bearer";
                 } else return "Sea-Goat";
             }
             case 2: {
-                if (day >= 20){
+                if (day >= 21){
                     return "Fishes";
                 } else return "Water-Bearer";
             }
@@ -53,6 +53,51 @@ public class Task12 {
                 if (day >= 21){
                     return "Ram";
                 } else return "Fishes";
+            }
+            case 4: {
+                if (day >= 21){
+                    return "Bull";
+                } else return "Ram";
+            }
+            case 5: {
+                if (day >= 22){
+                    return "Twins";
+                } else return "Bull";
+            }
+            case 6: {
+                if (day >= 22){
+                    return "Crab";
+                } else return "Twins";
+            }
+            case 7: {
+                if (day >= 23){
+                    return "Lion";
+                } else return "Crab";
+            }
+            case 8: {
+                if (day >= 24){
+                    return "Maiden";
+                } else return "Lion";
+            }
+            case 9: {
+                if (day >= 24){
+                    return "Scales";
+                } else return "Maiden";
+            }
+            case 10: {
+                if (day >= 24){
+                    return "Scorpion";
+                } else return "Scales";
+            }
+            case 11: {
+                if (day >= 23){
+                    return "Archer";
+                } else return "Scorpion";
+            }
+            case 12: {
+                if (day >= 22){
+                    return "Sea-Goat";
+                } else return "Archer";
             }
         }
         return null;
