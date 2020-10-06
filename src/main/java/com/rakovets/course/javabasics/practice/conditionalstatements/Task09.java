@@ -27,7 +27,7 @@ public class Task09 {
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
 
 
-        int maxFlatsPerPorch = numberApartmentsPerFloor * numberFloors ; // в подъезде
+        int maxFlatsPerPorch = numberApartmentsPerFloor * numberFloors ;
         int resultPorch = (apartmentNumber -1) / maxFlatsPerPorch + 1;
         int resultfloor = ((apartmentNumber -1) % maxFlatsPerPorch) / numberApartmentsPerFloor + 1;
 
