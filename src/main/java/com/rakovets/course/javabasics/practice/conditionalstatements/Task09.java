@@ -32,7 +32,6 @@ public class Task09 {
         int resultfloor = ((apartmentNumber -1) % maxFlatsPerPorch) / numberApartmentsPerFloor + 1;
 
         System.out.println("Porch: " + resultPorch + ". Floor: " + resultfloor);
-
     }
 
 
