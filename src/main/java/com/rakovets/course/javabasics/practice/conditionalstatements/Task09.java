@@ -25,5 +25,17 @@ public class Task09 {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
+
+
+        int maxFlatsPerPorch = numberApartmentsPerFloor * numberFloors ; // в подъезде
+        int resultPorch = (apartmentNumber -1) / maxFlatsPerPorch + 1;
+        int resultfloor = ((apartmentNumber -1) % maxFlatsPerPorch) / numberApartmentsPerFloor + 1;
+
+        System.out.println("Porch: " + resultPorch + ". Floor: " + resultfloor);
+
     }
+
+
 }
+
+
