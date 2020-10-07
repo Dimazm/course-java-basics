@@ -33,7 +33,7 @@ public class Task11 {
         if (letterCode >= 65 && letterCode <= 90 || letterCode >= 97 && letterCode <= 122) {
             System.out.println("latin");
         } else if
-        (letterCode >= 176 && letterCode <= 239) {
+        (letterCode >= 1040 && letterCode <= 1113) {
             System.out.println("cyrillic");
         } else if
         (letterCode >= 48 && letterCode <= 57) {
