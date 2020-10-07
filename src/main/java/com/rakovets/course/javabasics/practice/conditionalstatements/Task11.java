@@ -32,11 +32,9 @@ public class Task11 {
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
         if (letterCode >= 65 && letterCode <= 90 || letterCode >= 97 && letterCode <= 122) {
             System.out.println("latin");
-        } else if
-        (letterCode >= 176 && letterCode <= 239) {
+        } else if (letterCode >= 176 && letterCode <= 239) {
             System.out.println("cyrillic");
-        } else if
-        (letterCode >= 48 && letterCode <= 57) {
+        } else if (letterCode >= 48 && letterCode <= 57) {
             System.out.println("digit");
         } else System.out.println("undefined");
 
